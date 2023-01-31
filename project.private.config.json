@@ -1,6 +1,7 @@
 {
   "setting": {
-    "compileHotReLoad": true
+    "compileHotReLoad": true,
+    "urlCheck": false
   },
   "condition": {
     "miniprogram": {
@@ -50,6 +51,13 @@
           "name": "pages/updateRecordSuccess/index",
           "pathName": "pages/updateRecordSuccess/index",
           "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/journey_map/index",
+          "query": "",
+          "launchMode": "default",
           "scene": null
         }
       ]
