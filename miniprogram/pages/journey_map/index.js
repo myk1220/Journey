@@ -10,16 +10,36 @@ Page({
                 latitude: 39.91988,
                 longitude: 116.46153,
                 callout: {
-                  content: '文本内容',
-                  color: '#ff0000',
-                  fontSize: 14,
-                  borderWidth: 2,
-                  borderRadius: 10,
-                  borderColor: '#000000',
-                  bgColor: '#fff',
-                  padding: 5,
-                  display: 'BYCLICK',
-                  textAlign: 'center'
+                    content: '文本内容',
+                    color: '#ff0000',
+                    fontSize: 14,
+                    borderWidth: 2,
+                    borderRadius: 10,
+                    borderColor: '#000000',
+                    bgColor: '#fff',
+                    padding: 5,
+                    display: 'ALWAYS',
+                    textAlign: 'center',
+                },
+            },
+            {
+                id: 1,
+                title: '测试2',
+                width: 48,
+                height: 48,
+                latitude: 39.91788,
+                longitude: 116.46253,
+                callout: {
+                    content: '文本内容',
+                    color: '#ff0000',
+                    fontSize: 14,
+                    borderWidth: 2,
+                    borderRadius: 10,
+                    borderColor: '#000000',
+                    bgColor: '#fff',
+                    padding: 5,
+                    display: 'BYCLICK',
+                    textAlign: 'center',
                 },
             },
         ],
@@ -32,12 +52,12 @@ Page({
     },
 
     tapMap(e) {
-        console.log('map',e)
+        console.log('map', e)
     },
     markerTap(e) {
-      console.log('marker',e);
+        console.log('marker', e)
     },
     calloutTap(e) {
-      console.log('callout',e);
-    }
+        console.log('callout', e)
+    },
 })
