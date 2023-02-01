@@ -1,0 +1,4 @@
+<view class="page full-screen">
+  <view class="map-utils"></view>
+  <map id="JourneyMap" style="width: 100%; height: 90vh;" bindmarkertap="markerTap" bindcallouttap="calloutTap" markers="{{markers}}" include-points></map>
+</view>

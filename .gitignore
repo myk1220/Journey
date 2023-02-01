@@ -1,7 +1,15 @@
-dist/
-deploy_versions/
-.temp/
-.rn_temp/
-node_modules/
+# Windows
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+
+# macOS
 .DS_Store
-.swc
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+# Node.js
+node_modules/
+project.private.config.json

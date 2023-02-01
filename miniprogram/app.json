@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/index/index",
+    "pages/journey_map/index"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "旅行Journey",
+    "navigationBarTextStyle": "black"
+  },
+  "resolveAlias": {
+    "~/*": "/*"
+  },
+  "tabBar": {
+    "color": "#131313",
+    "backgroundColor": "#fff",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/journey_map/index",
+        "text": "地图"
+      },
+      {
+        "pagePath": "pages/login/index",
+        "text": "登陆"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "展示旅行地图"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

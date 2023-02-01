@@ -1,0 +1,73 @@
+view,
+text,
+span,
+h1,
+h2,
+h3,
+h4 {
+    box-sizing: border-box;
+}
+
+.generate-margin(50);
+.generate-fontSize(32);
+
+.generate-margin(@n, @i: 0) when (@i =< @n) {
+  .mt-@{i} {
+    margin-top: (@i * 10rpx) !important;
+  }
+
+  .mb-@{i} {
+    margin-bottom: (@i * 10rpx) !important;
+  }
+
+  .ml-@{i} {
+    margin-left: (@i * 10rpx) !important;
+  }
+
+  .mr-@{i} {
+    margin-right: (@i * 10rpx) !important;
+  }
+
+  .generate-margin(@n, (@i + 1));
+}
+
+.generate-fontSize(@n, @i: 6) when (@i =< @n) {
+  .fs-@{i} {
+    font-size: (@i * 2rpx) !important;
+  }
+
+  .generate-fontSize(@n, (@i + 1));
+}
+
+@theme-main: #018abe;
+@theme-mix1: #daaebd;
+@theme-mix2: #dabf47;
+@theme-bg: #d6e7ee;
+@theme-border: #000000;
+@disable: #acacac;
+
+.page {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    background-color: @theme-bg;
+    &.full-screen{
+      height: 100vh;
+      width: 100vw;
+    }
+    .login-btn {
+        width: 80%;
+        color: #FFF;
+        font-size: 32rpx;
+        background-color: @theme-main;
+        border-radius: 50rpx;
+        text-align: center;
+    }
+    .disable {
+        pointer-events: none;
+        color: @disable !important;
+    }
+}
