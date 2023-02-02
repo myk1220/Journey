@@ -1,27 +1,9 @@
 Page({
     data: {
         mapCtx: null,
+        addMarker: false,
+        removeMarker: false,
         markers: [
-            {
-                id: 0,
-                title: '测试1',
-                width: 48,
-                height: 48,
-                latitude: 39.91988,
-                longitude: 116.46153,
-                callout: {
-                    content: '文本内容',
-                    color: '#ff0000',
-                    fontSize: 14,
-                    borderWidth: 2,
-                    borderRadius: 10,
-                    borderColor: '#000000',
-                    bgColor: '#fff',
-                    padding: 5,
-                    display: 'ALWAYS',
-                    textAlign: 'center',
-                },
-            },
             {
                 id: 1,
                 title: '测试2',
@@ -50,12 +32,29 @@ Page({
     onReady() {
         this.mapCtx = wx.createMapContext('JourneyMap')
     },
-
+    tapAddMarker() {
+      this.setData({
+        addMarker: !this.data.addMarker,
+        removeMarker: false
+      })
+    },
+    tapRemoveMarker() {
+      this.setData({
+        removeMarker: !this.data.removeMarker,
+        addMarker: false
+      })
+    },
     tapMap(e) {
         console.log('map', e)
+        if(this.data.addMarker) {
+          console.log('addMarker to Map');
+        }
     },
     markerTap(e) {
         console.log('marker', e)
+        if(this.data.removeMarker) {
+          console.log('removeMarker to Map');
+        }
     },
     calloutTap(e) {
         console.log('callout', e)
