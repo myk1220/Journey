@@ -1,8 +1,11 @@
 {
   "pages": [
-    "pages/login/index",
     "pages/index/index",
-    "pages/journey_map/index"
+    "pages/journey_map/index",
+    "pages/add/index",
+    "pages/hot/index",
+    "pages/personal_center/index",
+    "pages/login/index"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -17,19 +20,36 @@
   "tabBar": {
     "color": "#131313",
     "backgroundColor": "#fff",
-    "selectedColor": "#000000",
+    "selectedColor": "#789283",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "主页"
+        "text": "主页",
+        "iconPath": "./assets/image/home.png",
+        "selectedIconPath": "./assets/image/home-chosen.png"
       },
       {
         "pagePath": "pages/journey_map/index",
-        "text": "地图"
+        "text": "地图",
+        "iconPath": "./assets/image/map.png",
+        "selectedIconPath": "./assets/image/map-chosen.png"
       },
       {
-        "pagePath": "pages/login/index",
-        "text": "登陆"
+        "pagePath": "pages/add/index",
+        "iconPath": "./assets/image/add.png",
+        "selectedIconPath": "./assets/image/add-chosen.png"
+      },
+      {
+        "pagePath": "pages/hot/index",
+        "text": "热门",
+        "iconPath": "./assets/image/hot.png",
+        "selectedIconPath": "./assets/image/hot-chosen.png"
+      },
+      {
+        "pagePath": "pages/personal_center/index",
+        "text": "我的",
+        "iconPath": "./assets/image/mine.png",
+        "selectedIconPath": "./assets/image/mine-chosen.png"
       }
     ]
   },
@@ -38,5 +58,6 @@
       "desc": "展示旅行地图"
     }
   },
+  "lazyCodeLoading": "requiredComponents",
   "sitemapLocation": "sitemap.json"
 }
