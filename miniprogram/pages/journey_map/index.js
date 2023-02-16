@@ -153,6 +153,7 @@ Page({
         longitude: item.longitude
       }
     })
+    console.log(points, this.mapCtx);
     this.mapCtx.includePoints({
       points: points,
       padding: [100, 100, 100, 100],

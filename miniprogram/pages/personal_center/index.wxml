@@ -1,3 +1,36 @@
 <view class="page full-screen">
-  我的
+  <view class="header">
+    <image class="avatar" src="../../assets/image/home.png" mode="widthFix"/>
+    <view>
+      <view class="name">
+        Skime
+      </view>
+      <view class="name-tips">
+        Record your Journey
+      </view>
+    </view>
+    <image class="right_arrow" src="../../assets/image/arrow.png" mode="widthFix"/>
+  </view>
+  <view class="session-block">
+    <view class="session-item">
+    <image class="session-icon" src="../../assets/image/hot.png" mode="widthFix"/>
+      消息中心
+    <image class="right_arrow" src="../../assets/image/arrow.png" mode="widthFix"/>
+    </view>
+    <view class="session-item">
+    <image class="session-icon" src="../../assets/image/hot.png" mode="widthFix"/>
+      建议反馈
+    <image class="right_arrow" src="../../assets/image/arrow.png" mode="widthFix"/>
+    </view>
+    <view class="session-item">
+    <image class="session-icon" src="../../assets/image/hot.png" mode="widthFix"/>
+      关于我们
+    <image class="right_arrow" src="../../assets/image/arrow.png" mode="widthFix"/>
+    </view>
+    <view class="session-item">
+    <image class="session-icon" src="../../assets/image/hot.png" mode="widthFix"/>
+      隐私条款
+    <image class="right_arrow" src="../../assets/image/arrow.png" mode="widthFix"/>
+    </view>
+  </view>
 </view>
